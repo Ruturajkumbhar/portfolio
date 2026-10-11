@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ruturaj Kumbhar | Jr. DevOps Engineer</title>
+  <meta name="description" content="Ruturaj Kumbhar — Junior DevOps Engineer in Hyderabad. AWS, Jenkins CI/CD, Terraform, Docker, Kubernetes, Linux automation." />
+  <meta name="theme-color" content="#0b1220" />
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
+</head>
+<body>
+  <div class="scroll-progress" id="progress"></div>
+  <canvas id="bg"></canvas>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <a href="#home" class="logo"><span class="logo-mark">&gt;_</span><span>Ruturaj<span class="accent"> Kumbhar</span></span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle dark / light theme">
+        <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <a class="btn btn-sm btn-primary hide-sm" href="assets/Ruturaj_Kumbhar_Resume.pdf" download>Resume</a>
+      <button class="icon-btn burger" id="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow reveal"><span class="pulse"></span> Open to DevOps &amp; Cloud opportunities</p>
+          <h1 class="reveal">Hi, I'm <span class="grad">Ruturaj Kumbhar</span></h1>
+          <h2 class="role reveal">I'm a <span id="typed" class="accent"></span><span class="caret">|</span></h2>
+          <p class="tagline reveal">Automating and securing infrastructure. Streamlining deployments. Building reliable cloud solutions.</p>
+          <div class="hero-cta reveal">
+            <a href="#projects" class="btn btn-primary">View My Work
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="assets/Ruturaj_Kumbhar_Resume.pdf" class="btn btn-ghost" download>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+              Download Resume
+            </a>
+          </div>
+          <div class="socials reveal">
+            <a href="https://www.linkedin.com/in/ruturaj-kumbhar-a18b99285" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+            </a>
+            <a href="https://github.com/Ruturajkumbhar" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.2.8.8 1.3 1.9 1.3 3.1 0 4.6-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
+            </a>
+            <a href="mailto:ruturajkumbhar261202@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            </a>
+            <a href="tel:+919960004403" aria-label="Phone">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="photo-wrap">
+            <div class="photo-ring"></div>
+            <img src="assets/profile.jpg" alt="Ruturaj Kumbhar" class="photo" width="640" height="640" />
+            <span class="float-chip c1"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="" onerror="this.parentNode.textContent='AWS'">AWS</span>
+            <span class="float-chip c2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="" onerror="this.remove()">Docker</span>
+            <span class="float-chip c3"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-original.svg" alt="" onerror="this.remove()">K8s</span>
+            <span class="float-chip c4"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" alt="" onerror="this.remove()">Terraform</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pipeline visual -->
+      <!-- Pipeline visual -->
+<div class="container">
+  <div class="deploy reveal" aria-label="Illustration of a CI/CD pipeline run">
+    <div class="term">
+      <div class="term-bar">
+        <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+        <span class="term-title">jenkins &mdash; deploy-pipeline #128</span>
+        <span class="term-live"><i></i>LIVE</span>
+      </div>
+      <div class="term-body" id="termBody" aria-hidden="true"></div>
+    </div>
+
+    <div class="flow">
+      <div class="flow-head"><b>Delivery pipeline</b><span id="flowPct">0%</span></div>
+      <div class="bar"><div class="bar-fill" id="barFill"></div></div>
+      <ul class="steps" id="steps">
+        <li><span class="chk"></span><div><b>Source</b><small>Git push triggers the webhook</small></div><em>Git</em></li>
+        <li><span class="chk"></span><div><b>Build</b><small>Compile &amp; run unit tests</small></div><em>Jenkins</em></li>
+        <li><span class="chk"></span><div><b>Quality</b><small>Static analysis &amp; quality gate</small></div><em>SonarQube</em></li>
+        <li><span class="chk"></span><div><b>Package</b><small>Build &amp; push container image</small></div><em>Docker</em></li>
+        <li><span class="chk"></span><div><b>Provision</b><small>Infrastructure as Code</small></div><em>Terraform</em></li>
+        <li><span class="chk"></span><div><b>Deploy</b><small>GitOps sync to the cluster</small></div><em>Argo CD</em></li>
+        <li><span class="chk"></span><div><b>Monitor</b><small>Metrics, dashboards &amp; alerts</small></div><em>Grafana</em></li>
+      </ul>
+      <p class="flow-note">Sample pipeline run, for illustration</p>
+    </div>
+  </div>
+</div>
+
+    <!-- STATS -->
+    <section class="stats">
+      <div class="container stats-grid">
+        <div class="stat reveal"><span class="num" data-count="9" data-suffix="+">0</span><span class="lbl">Months of DevOps experience</span></div>
+        <div class="stat reveal"><span class="num" data-count="7" data-suffix="+">0</span><span class="lbl">Applications deployed &amp; supported</span></div>
+        <div class="stat reveal"><span class="num" data-count="25" data-suffix="+">0</span><span class="lbl">Tools &amp; technologies</span></div>
+        <div class="stat reveal"><span class="num" data-count="2">0</span><span class="lbl">Companies (Intern + Full-time)</span></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker"> about</span>
+          <h2>Who I am</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>I'm a <strong>Junior DevOps Engineer at Tvisha Technologies Incorporation, Hyderabad</strong>, with a background in Computer Science and Engineering. I have hands-on experience in AWS cloud infrastructure, CI/CD pipeline development and maintenance, Linux server administration, and application deployment automation.</p>
+            <p>In my current role, I deploy and maintain applications, manage Jenkins pipelines, configure web servers, and troubleshoot infrastructure and deployment issues. Previously, I gained DevOps experience as an intern at <strong>Olisoft Solutions LLP</strong>, working with Jenkins, Argo CD, Terraform, Docker, AWS, and monitoring solutions.</p>
+            <p>I'm passionate about automating repetitive tasks, improving deployment efficiency, and building reliable infrastructure. I keep growing my skills in Infrastructure as Code, containerization, Kubernetes, cloud security, and multi-cloud technologies, with the long-term goal of becoming a skilled <strong>Cloud and DevSecOps Engineer</strong>.</p>
+          </div>
+          <div class="about-cards reveal">
+            <div class="mini-card"><span class="mi">📍</span><div><b>Location</b><small>Hyderabad, India</small></div></div>
+            <div class="mini-card"><span class="mi">💼</span><div><b>Current role</b><small>Jr. DevOps Engineer @ Tvisha Technologies</small></div></div>
+            <div class="mini-card"><span class="mi">🎓</span><div><b>Education</b><small>B.Tech CSE, 2021 – 2025</small></div></div>
+            <div class="mini-card"><span class="mi">🎯</span><div><b>Goal</b><small>Cloud &amp; DevSecOps Engineer</small></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section alt" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker"> skills</span>
+          <h2>Tech stack &amp; tools</h2>
+        </div>
+        <div class="skills-grid" id="skillsGrid"></div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">// experience</span>
+          <h2>Where I've worked</h2>
+        </div>
+        <div class="timeline">
+          <article class="t-item reveal">
+            <span class="t-dot current"></span>
+            <div class="t-card">
+              <div class="t-top">
+                <div>
+                  <h3>Junior DevOps Engineer</h3>
+                  <p class="company">Tvisha Technologies Incorporation · Hyderabad</p>
+                </div>
+                <span class="date">July 2026 – Present</span>
+              </div>
+              <ul>
+                <li>Manage AWS infrastructure for client and internal applications, supporting frontend and backend deployments across testing and production on Amazon EC2.</li>
+                <li>Create, maintain and troubleshoot Jenkins CI/CD pipelines, covering pipeline configuration, build troubleshooting, deployment automation and release management.</li>
+                <li>Develop Shell/Bash scripts integrated with Jenkins to automate .env configuration, deployments, backups, file transfers and PM2 service management.</li>
+                <li>Administer Linux servers using AWS CLI and SSH: deployments, service management, configuration changes, log analysis and troubleshooting.</li>
+                <li>Manage processes with PM2 and systemd; configure Nginx and Apache for web hosting, reverse proxying, path-based routing and HTTPS.</li>
+                <li>Configure Amazon S3 for file and image storage, manage IAM roles and permissions, and support Amazon RDS (MySQL/PostgreSQL) connectivity.</li>
+                <li>Manage DNS records and domains across Cloudflare, GoDaddy, Namecheap and Name.com; configure and troubleshoot SSL/TLS, including ZeroSSL certificates.</li>
+                <li>Deploy and manage frontend apps on Vercel, configure custom domains, and implement uptime monitoring for availability.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="t-item reveal">
+            <span class="t-dot"></span>
+            <div class="t-card">
+              <div class="t-top">
+                <div>
+                  <h3>DevOps Intern</h3>
+                  <p class="company">Olisoft Solutions LLP · Pune, India (Remote)</p>
+                </div>
+                <span class="date">January 2026 – June 2026</span>
+              </div>
+              <ul>
+                <li>Provisioned and managed AWS infrastructure with Terraform: EC2, VPC, IAM, S3 and related services.</li>
+                <li>Maintained and troubleshot Jenkins CI/CD pipelines for testing environments: build failures, configuration issues and deployment errors.</li>
+                <li>Configured Prometheus and Grafana dashboards to track CPU, memory, application and system-level metrics.</li>
+                <li>Used Docker to build, run and troubleshoot containerized applications.</li>
+                <li>Assisted with Kubernetes (EKS) tasks: checking pods, deployments, services and logs, and troubleshooting basic issues.</li>
+                <li>Used Git and GitHub for branching, version control and collaboration; wrote Shell/Bash scripts for deployment and infrastructure automation.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section alt" id="projects">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker"> projects</span>
+      <h2>What I've built &amp; shipped</h2>
+    </div>
+
+    <div class="filters reveal" id="filters">
+      <button class="chip active" data-filter="all">All</button>
+      <button class="chip" data-filter="professional">Professional</button>
+      <button class="chip" data-filter="personal">Personal / Learning</button>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+
+      <article class="project reveal" data-cat="professional">
+        <div class="p-head"><span class="badge">Tvisha Technologies</span><span class="p-icon">🏠</span></div>
+        <h3>Homefleet</h3>
+        <p class="p-sub">Property Buying &amp; Selling Platform</p>
+        <p>Supported production infrastructure for a React.js, Node.js and PostgreSQL application: backend on AWS EC2 with PM2, database on Amazon RDS and media on Amazon S3. Designed and maintained Jenkins CI/CD pipelines for testing and production, and wrote Shell scripts for environment configuration, backups, deployments and PM2 management. Deployed the frontend on Vercel, configured Cloudflare DNS and ZeroSSL HTTPS, and supported IAM, VPC and Security Group setup.</p>
+        <div class="tags"><span>AWS EC2</span><span>S3</span><span>RDS</span><span>IAM</span><span>VPC</span><span>Jenkins</span><span>Shell</span><span>PM2</span><span>Vercel</span><span>Cloudflare</span><span>ZeroSSL</span><span>Linux</span></div>
+      </article>
+
+      <article class="project reveal" data-cat="professional">
+        <div class="p-head"><span class="badge">Tvisha Technologies</span><span class="p-icon">✅</span></div>
+        <h3>Taskity</h3>
+        <p class="p-sub">Task Management Application</p>
+        <p>Deployed the Node.js backend on AWS EC2 with PM2, PostgreSQL on Amazon RDS and application files on Amazon S3, with the frontend hosted on Vercel. Created and maintained Jenkins CI/CD pipelines for testing and production, automated deployment tasks with Shell/Bash, and configured Cloudflare DNS and ZeroSSL SSL/TLS for HTTPS access.</p>
+        <div class="tags"><span>AWS EC2</span><span>S3</span><span>RDS</span><span>IAM</span><span>VPC</span><span>Jenkins</span><span>Shell</span><span>PM2</span><span>Vercel</span><span>Cloudflare</span><span>ZeroSSL</span><span>Linux</span></div>
+      </article>
+
+      <article class="project reveal" data-cat="professional">
+        <div class="p-head"><span class="badge">Client Project</span><span class="p-icon">🏅</span></div>
+        <h3>Spotonn</h3>
+        <p class="p-sub">Sports Management Platform</p>
+        <p>Deployed the React.js frontend on AWS EC2 with Apache and the Node.js backend with PM2, with production data in Amazon RDS (MySQL) and media in Amazon S3. Built and maintained Jenkins pipelines and Shell scripts; validated the testing environment in the company AWS account and supported production deployment in the client AWS account. Configured Cloudflare DNS and ZeroSSL SSL/TLS for HTTPS.</p>
+        <div class="tags"><span>AWS EC2</span><span>S3</span><span>RDS (MySQL)</span><span>IAM</span><span>VPC</span><span>Jenkins</span><span>Shell</span><span>Apache</span><span>PM2</span><span>Cloudflare</span><span>ZeroSSL</span><span>Linux</span></div>
+      </article>
+
+      <!-- NEW: Project 4 -->
+      <article class="project reveal" data-cat="professional">
+        <div class="p-head"><span class="badge">Tvisha Technologies</span><span class="p-icon">🎓</span></div>
+        <h3>LMS &amp; EMS</h3>
+        <p class="p-sub"> Lead & mployee Managament</p>
+        <p>Supported application deployments, environment configuration, CI/CD operations and troubleshooting across testing and production environments. Worked with Jenkins, AWS, Linux, Shell scripting, Apache/Nginx, PM2, DNS and SSL/TLS for application and infrastructure support.</p>
+        <div class="tags"><span>AWS EC2</span><span>S3</span><span>RDS (MySQL)</span><span>IAM</span><span>VPC</span><span>Jenkins</span><span>Shell</span><span>Apache</span><span>PM2</span><span>Cloudflare</span><span>ZeroSSL</span><span>Linux</span></div>
+      </article>
+
+      <!-- NEW: Project 5 -->
+      <article class="project reveal" data-cat="professional">
+        <div class="p-head"><span class="badge">Tvisha Technologies</span><span class="p-icon">🧭</span></div>
+        <h3>WTB</h3>
+        <p class="p-sub">Internal Applications for back-linking</p>
+        <p>Supported application deployments, environment configuration, CI/CD operations and troubleshooting across testing and production environments. Worked with Jenkins, AWS, Linux, Shell scripting, Apache/Nginx, PM2, DNS and SSL/TLS for application and infrastructure support.</p>
+        <div class="tags"><span>AWS EC2</span><span>S3</span><span>RDS (MySQL)</span><span>IAM</span><span>VPC</span><span>Jenkins</span><span>Shell</span><span>Apache</span><span>PM2</span><span>Cloudflare</span><span>ZeroSSL</span><span>Linux</span></div>
+      </article>
+
+      <!-- NEW: Project 6 -->
+      <article class="project reveal" data-cat="professional">
+        <div class="p-head"><span class="badge">Client Project</span><span class="p-icon">🎨</span></div>
+        <h3>TrueColor</h3>
+        <p class="p-sub">Laundry Buisness</p>
+        <p>Supported application deployments, environment configuration, CI/CD operations and troubleshooting across testing and production environments. Worked with Jenkins, AWS, Linux, Shell scripting, Apache/Nginx, PM2, DNS and SSL/TLS for application and infrastructure support.</p>
+        <div class="tags"><span>AWS EC2</span><span>S3</span><span>RDS (MySQL)</span><span>IAM</span><span>VPC</span><span>Jenkins</span><span>Shell</span><span>Apache</span><span>PM2</span><span>Cloudflare</span><span>ZeroSSL</span><span>Linux</span></div>
+      </article>
+
+      <article class="project reveal" data-cat="personal">
+        <div class="p-head"><span class="badge alt">Personal Project</span><span class="p-icon">🚀</span></div>
+        <h3>End-to-End CI/CD with GitOps</h3>
+        <p class="p-sub">Jenkins · Docker · Kubernetes · Argo CD</p>
+        <p>Built an end-to-end CI/CD pipeline with Jenkins to automate build, testing, Docker image creation and deployment to Kubernetes. Provisioned AWS infrastructure using Terraform and implemented GitOps-based deployments with Argo CD. Configured Prometheus and Grafana for infrastructure and application monitoring.</p>
+        <div class="tags"><span>Jenkins</span><span>Docker</span><span>Kubernetes</span><span>Argo CD</span><span>Terraform</span><span>Prometheus</span><span>Grafana</span><span>AWS</span><span>Git</span><span>Linux</span><span>CI/CD</span><span>IaC</span><span>GitOps</span></div>
+      </article>
+
+      <article class="project reveal" data-cat="personal">
+        <div class="p-head"><span class="badge alt">Personal Project</span><span class="p-icon">🛡️</span></div>
+        <h3>Secure Three-Tier AWS Infrastructure</h3>
+        <p class="p-sub">Terraform · VPC · ALB · WAF · RDS</p>
+        <p>Designed and provisioned a secure, scalable three-tier application infrastructure on AWS using Terraform. Configured a VPC with public and private subnets, EC2 for the app tier, an Application Load Balancer for traffic distribution and Amazon RDS for the database. Integrated AWS WAF with the load balancer to protect against common web exploits and malicious HTTP requests, with security groups, IAM permissions and network access controls. Provisioning is fully automated for consistent, repeatable deployments.</p>
+        <div class="tags"><span>AWS</span><span>Terraform</span><span>VPC</span><span>Public/Private Subnets</span><span>Internet Gateway</span><span>NAT Gateway</span><span>EC2</span><span>ALB</span><span>AWS WAF</span><span>RDS</span><span>Security Groups</span><span>IAM</span><span>Linux</span><span>Git</span></div>
+      </article>
+
+      <article class="project reveal" data-cat="personal">
+        <div class="p-head"><span class="badge alt">Personal Project</span><span class="p-icon">🤖</span></div>
+        <h3>AI-Powered Actionable Agent</h3>
+        <p class="p-sub">Google Gemini &amp; MCP</p>
+        <p>Developed a Python-based AI agent using Google Gemini AI and an MCP Server to automate tasks and interact with external tools through REST APIs, with logging and error handling. Integrated AWS EC2 and Lambda to support cloud-based processing and automation workflows, using Git and Linux for source control and execution.</p>
+        <div class="tags"><span>Python</span><span>Google Gemini AI</span><span>MCP Server</span><span>AWS EC2</span><span>AWS Lambda</span><span>REST APIs</span><span>Git</span><span>Linux</span><span>Automation</span></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker"> education</span>
+          <h2>Academic background</h2>
+        </div>
+        <div class="edu-grid">
+          <div class="edu-card reveal">
+            <span class="edu-year">2021 – 2025</span>
+            <h3>B.Tech, Computer Science &amp; Engineering</h3>
+            <p>Sant Gajanan Maharaj College of Engineering, Kolhapur</p>
+            <span class="score">CGPA: 7.4 / 10</span>
+          </div>
+          <div class="edu-card reveal">
+            <span class="edu-year">2019 – 2021</span>
+            <h3>HSC (12th)</h3>
+            <p>MRSV &amp; Jr College, Phaltan</p>
+            <span class="score">85%</span>
+          </div>
+          <div class="edu-card reveal">
+            <span class="edu-year">2019</span>
+            <h3>SSC (10th)</h3>
+            <p>Kamala Nimbakar Balbhavan, Phaltan</p>
+            <span class="score">75%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section alt" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker"> contact</span>
+          <h2>Let's work together</h2>
+          <p class="lead">Have an opportunity, a question, or just want to say hi? My inbox is open.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <a class="c-item" href="mailto:ruturajkumbhar261202@gmail.com">
+              <span class="c-ico">✉️</span><div><b>Email</b><small>ruturajkumbhar261202@gmail.com</small></div>
+            </a>
+            <a class="c-item" href="tel:+919960004403">
+              <span class="c-ico">📞</span><div><b>Phone / WhatsApp</b><small>+91 99600 04403</small></div>
+            </a>
+            <a class="c-item" href="https://www.linkedin.com/in/ruturaj-kumbhar-a18b99285" target="_blank" rel="noopener">
+              <span class="c-ico">in</span><div><b>LinkedIn</b><small>ruturaj-kumbhar</small></div>
+            </a>
+            <div class="c-item">
+              <span class="c-ico">📍</span><div><b>Location</b><small>Hyderabad, India</small></div>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact" />
+            <p class="hp"><label>Don't fill this out: <input name="bot-field" /></label></p>
+            <div class="field"><label for="name">Your name</label><input id="name" name="name" type="text" required placeholder="John Doe" /></div>
+            <div class="field"><label for="email">Your email</label><input id="email" name="email" type="email" required placeholder="john@example.com" /></div>
+            <div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="5" required placeholder="Tell me about the role or project..."></textarea></div>
+            <button type="submit" class="btn btn-primary full">Send Message</button>
+            <p class="form-note" id="formNote" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container foot-in">
+      <p>© <span id="year"></span> Ruturaj Kumbhar.</p>
+      <a href="#home" class="to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
